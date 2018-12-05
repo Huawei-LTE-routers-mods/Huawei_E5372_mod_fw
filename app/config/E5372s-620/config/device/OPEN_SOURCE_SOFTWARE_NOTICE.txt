@@ -1,0 +1,94 @@
+COPYRIGHT NOTICE AND WARRANTY DISCLAIMER
+
+This product incorporates open source software components covered by the terms of third party copyright notices and license agreements contained below.
+ 
+
+COPYRIGHT NOTICE 
+Zlib   
+Version:    1.2.3 
+Copyright (C) 1995-2005 Jean-loup Gailly and Mark Adler
+zlib License: http://www.zlib.net 
+
+
+wpa_supplicant   
+Version:    master-20110109 
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+                 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+GPL V2.0 License: http://github.com/tsh/wpa_supplicant/
+ 
+
+IEEE 802.1d ethernet bridging 
+Version:    bridge-utils-0.9.7 
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+GPL V2.0 License: http://sourceforge.net/projects/bridge/
+ 
+
+WIDE-DHCPv6 
+Version:    20080615 
+Copyright (C) 1998-2004 WIDE Project
+BSD License:  http://sourceforge.net/projects/wide-dhcpv6/
+ 
+
+log4javascript 
+Version:    V1.4.1 
+Copyright 2009 Tim Down.
+Apache v2.0 License: http://sourceforge.net/projects/log4javascript/ 
+MiniUPnP Project Daemon 
+Version:    1.0-RC12 
+Copyright (c) 2006-2011 Thomas Bernard
+BSD License: http://miniupnp.tuxfamily.org/
+ 
+
+OSIP Library 
+Version:    2.0.9 
+Copyright (C) 2003 Free Software Foundation, Inc
+LGPL V2.1 License: http://www.gnu.org/software/osip/
+
+
+Siproxd – SIP proxy/masquerading daemon 
+Version:     0.5.10 
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+GPL License: http://sourceforge.net/projects/siproxd/ 
+ 
+ 
+jQuery JavaScript Library  
+Version:    1.7.2 
+Copyright 2013 The jQuery Foundation.
+MIT License: http://jquery.com/
+
+
+jqueryjs  
+Version:    1.4.4 
+Copyright 2013 The jQuery Foundation.
+MIT License: http://jquery.com/
+
+
+Linux IPv6 Router Advertisement Daemon – radvd
+Version:      1.4
+Copyright (c) 1996,1997 by Lars Fenneberg<lf@elemental.net> 
+BSD 2.0 License: http://www.litech.org/radvd 
+
+
+
+theWall - pc_pppoe
+Version:    0.2 
+Copyright (c) 1989 Carnegie Mellon University.
+BSD License: http://sourceforge.net/projects/thewall/
+
+
+Endian Firewall Community
+Version:    EFW-2.3 
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+                          675 Mass Ave, Cambridge, MA 02139, USA
+GPL V2.0 License: http://sourceforge.net/projects/efw/
+
+
+Struts EJB
+Version:     1.3
+Copyright 2013 The jQuery Foundation.
+LGPL2.1 License: https://strutsejb.dev.java.net/
+
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<tempprotect_config>
+	<tempprotect_level>2</tempprotect_level>
+	<tempprotect_downrate>
+        <rate>20</rate>
+        <rate>5</rate>
+	</tempprotect_downrate>
+	<tempprotect_uprate>
+        <rate>0</rate>
+        <rate>0</rate>
+	</tempprotect_uprate>
+</tempprotect_config>

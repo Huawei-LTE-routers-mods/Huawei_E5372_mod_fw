@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<dhcps>
+		<ipaddress>192.168.8.1</ipaddress>
+		<startip>192.168.8.100</startip>
+		<endip>192.168.8.200</endip>
+		<primarydns>192.168.8.1</primarydns>
+		<secondarydns>192.168.8.1</secondarydns>
+	</dhcps>
+</config>

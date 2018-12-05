@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+	    <settings>
+			<wlan>
+	            <wps></wps>
+			</wlan>
+	    </settings>
+    </menu>
+</config>
+

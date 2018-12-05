@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+<enable>1</enable>
+<switch>
+<sntpswitch>1</sntpswitch>
+</switch>
+</config>

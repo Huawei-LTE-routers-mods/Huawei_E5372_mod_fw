@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dns_config>
+    <retry>3</retry>
+    <interval>2</interval>
+    <timeout>5</timeout>
+</dns_config>

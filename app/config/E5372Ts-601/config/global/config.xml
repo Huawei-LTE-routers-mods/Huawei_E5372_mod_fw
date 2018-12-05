@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- 页面菜单定义-->
+    <menu>
+	    <settings>
+			<wlan>
+	            <wps></wps>
+			</wlan>
+	    </settings>
+    </menu>
+</config>
+

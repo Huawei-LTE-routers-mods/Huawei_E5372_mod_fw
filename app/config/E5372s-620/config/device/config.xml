@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <copyright_enabled>1</copyright_enabled>
+    <hardware>
+        <classify>mobile-wifi</classify>
+    </hardware>
+	<supportmode>LTE|WCDMA|GSM</supportmode>
+</config>
