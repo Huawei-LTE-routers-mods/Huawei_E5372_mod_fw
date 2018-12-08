@@ -1,7 +1,4 @@
 #!/system/bin/busybox sh
-
-# NVRAM value is set in /app/bin/oled_hijack/autorun.sh
-
 set -e
 
 if [[ ! "$1" ]];
@@ -23,6 +20,11 @@ if [[ "$1" == "0" ]]
 then
     cp /system/usr/ipv6_webconfig/config_v4.xml /app/webroot/WebApp/common/config/lan/config.xml
 else
+    # Enable IPv6 enabling functionality
+    # Does not enable IPv6 support unless enabled in web interface
+    # configuration files, just allows it to be enabled
+    atc 'at^nvwr=8514,4,01 04 00 00'
+
     cp /system/usr/ipv6_webconfig/config_v6.xml /app/webroot/WebApp/common/config/lan/config.xml
 fi
 

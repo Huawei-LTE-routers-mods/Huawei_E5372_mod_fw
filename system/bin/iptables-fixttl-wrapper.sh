@@ -9,14 +9,23 @@ RETCODE="$?"
 
 if [[ "$1" == "-t" ]] && [[ "$3" == "-F" ]];
 then
-    if [[ "$2" == "mangle" ]];
+    if [[ "$2" == "filter" ]];
+    then
+        /app/bin/oled_hijack/remote_access.sh boot
+    elif [[ "$2" == "mangle" ]];
     then
         /etc/fix_ttl.sh 2
     elif [[ "$2" == "nat" ]];
     then
         /etc/anticensorship.sh
-        /etc/adblock.sh
+        /etc/dns_over_tls.sh
     fi
+fi
+
+if [[ "$1" == "-t" ]] && [[ "$2" == "filter" ]] \
+   && [[ "$3" == "-N" ]] && [[ "$4" == "SERVICE_INPUT" ]];
+then
+    /app/bin/oled_hijack/remote_access.sh boot
 fi
 
 exit "$RETCODE"

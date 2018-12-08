@@ -12,7 +12,8 @@
     local transparent censorship circumvention
     proxy and DNS redirection.
 
-    `adblock` is for advertisement blocking.
+    `dns_over_tls` is for DNS over TLS and
+    advertisement blocking.
 
     Execute `ipv6` to enable or disable IPv6 support
 

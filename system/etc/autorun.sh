@@ -39,7 +39,6 @@ else
 	[ ! -f /data/userdata/telnet_disable ] && telnetd -l login -b 0.0.0.0
 	[ ! -f /data/userdata/adb_disable ] && adb
 
-	sleep 3
 	/app/bin/oled_hijack/autorun.sh
 	[ -f /data/userdata/entware_autorun ] && /opt/etc/init.d/rc.unslung start
 	# fix_ttl.sh 2, anticensorship.sh and adblock.sh are called from iptables wrapper.
