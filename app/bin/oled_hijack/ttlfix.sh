@@ -1,5 +1,8 @@
 #!/system/bin/busybox sh
 
+# TTL OLED handler.
+# By ValdikSS, iam@valdikss.org.ru
+
 CONF_FILE="/etc/fix_ttl"
 CURRENT_MODE="$(cat $CONF_FILE)"
 echo $CURRENT_MODE

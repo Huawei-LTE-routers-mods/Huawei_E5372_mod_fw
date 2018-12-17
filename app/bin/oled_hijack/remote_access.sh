@@ -1,5 +1,8 @@
 #!/system/bin/busybox sh
 
+# Remote access OLED handler.
+# By ValdikSS, iam@valdikss.org.ru
+
 # telnetd and adbd are listening IPv4 only (0.0.0.0)
 
 CONF_FILE="/data/userdata/remote_access"

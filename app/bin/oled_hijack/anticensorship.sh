@@ -1,5 +1,8 @@
 #!/system/bin/busybox sh
 
+# Anticensorship OLED handler.
+# By ValdikSS, iam@valdikss.org.ru
+
 CONF_FILE="/data/userdata/anticensorship"
 CURRENT_MODE="$(cat $CONF_FILE)"
 echo $CURRENT_MODE

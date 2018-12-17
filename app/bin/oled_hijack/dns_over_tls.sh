@@ -1,5 +1,8 @@
 #!/system/bin/busybox sh
 
+# DNS over TLS OLED handler.
+# By ValdikSS, iam@valdikss.org.ru
+
 CONF_FILE="/data/userdata/dns_over_tls"
 CURRENT_MODE="$(cat $CONF_FILE)"
 echo $CURRENT_MODE

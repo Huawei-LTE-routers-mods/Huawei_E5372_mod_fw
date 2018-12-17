@@ -1,9 +1,12 @@
 #!/system/bin/busybox sh
 
 mkdir bin
+ln -s /system/lib /lib
 ln -s /system/bin/sh /bin/sh
 ln -s /system/bin/busybox /bin/ash
 ln -s /app/bin/oled_hijack/atc.sh /sbin/atc
+# For OpenVPN
+ln -s /system/bin/busybox /bin/ip
 mkdir /var /opt /tmp /online/opt
 # For Entware
 mount --bind /online/opt /opt
@@ -21,7 +24,15 @@ dmesg | grep "+=+=+==factory_mode+=+=+=="
 if [ $? -eq 0 ]
 then 
 	ecall wifi_power_on_full 1
-else
+	exit 0
+fi
+
+# Start everything only if we're not in offline charging mode.
+# Any AT command boots the device from offline mode, so
+# we shouldn't skip this check.
+# See init/main.c kernel source code for more information.
+if [[ "$(cat /proc/power_on)" == "#StartupMode:1!" ]];
+then
 	# Set time closer to a real time for time-sensitive software.
 	# Needed for everything TLS/HTTPS-related, like DNS over TLS stubby,
 	# to work before the time is synced over the internet.
@@ -46,7 +57,6 @@ else
 
 	# Run oled hijack autorun: unlock DATALOCK and cache some data
 	/app/bin/oled_hijack/autorun.sh
-	/app/appautorun.sh
 
 	[ ! -f /data/userdata/passwd ] && cp /etc/passwd_def /data/userdata/passwd
 	[ ! -f /data/userdata/telnet_disable ] && telnetd -l login -b 0.0.0.0
@@ -56,3 +66,5 @@ else
 	[ -f /data/userdata/entware_autorun ] && /opt/etc/init.d/rc.unslung start
 	# fix_ttl.sh 2, anticensorship.sh and dns_over_tls.sh are called from iptables wrapper.
 fi
+
+/app/appautorun.sh

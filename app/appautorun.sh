@@ -6,7 +6,7 @@ mkdir /var/run
 
 mkdir /var/log
 
-export LD_LIBRARY_PATH="/app/lib:/system/lib:/app/lib"
+export LD_LIBRARY_PATH="/app/lib:/system/lib:/system/lib/glibc"
 
 export PATH="/sbin:/app/bin:/system/sbin:/system/bin:/system/xbin:/app/bin"
 
