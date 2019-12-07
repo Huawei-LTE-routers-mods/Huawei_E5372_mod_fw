@@ -52,6 +52,9 @@ then
     rm /bin/sh
     # Linking Busybox ash to /bin/sh
     ln -s /system/bin/busybox /bin/sh
+    # Creating gzip-gunzip wrapper script needed for opkg
+    echo -e '#!/system/bin/busybox sh\nexec gunzip $@' > /bin/gzip
+    chmod +x /bin/gzip
 
     chmod +x /opt/alternative.sh
     # Prevent execution of locale generation since it requires 128+ MB RAM
@@ -60,6 +63,7 @@ then
 
     if /opt/alternative.sh; then
         rm /opt/alternative.sh
+        rm /bin/gzip
         # Downloading locale archive manually
         wget http://pkg.entware.net/binaries/other/locale-archive.2.23 \
          -O /opt/usr/lib/locale/locale-archive
