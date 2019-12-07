@@ -15,12 +15,12 @@ else
 fi
 
 function ab_start_dnstls {
-    stubby -g
+    stubby -C /etc/stubby/stubby.yml -g
     dnsmasq -C /etc/dnsmasq.conf
 }
 
 function ab_start_dnstls_with_adblock {
-    stubby -g
+    stubby -C /etc/stubby/stubby.yml -g
     dnsmasq -C /etc/dnsmasq-adblock.conf
 }
 

@@ -8,6 +8,8 @@ then
     echo "$0 0 - disable DNS over TLS"
     echo "$0 1 - enable DNS over TLS"
     echo "$0 2 - enable DNS over TLS with adblock"
+    echo "Cloudflare and Google servers are used by default."
+    echo "Check DNS over TLS configuration in /etc/stubby/stubby.yml"
     # Make sure the file exist
     touch "$CFILE"
     AB_ENABLED="$(cat $CFILE)"
