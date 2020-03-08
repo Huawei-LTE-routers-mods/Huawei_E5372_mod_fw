@@ -5,6 +5,8 @@ Huawei E5372 firmware repository. Check available branches.
 
 Current version: 21.290.23.00.00
 
+**Check [releases page](https://github.com/Huawei-LTE-routers-mods/Huawei_E5372_mod_fw/releases) for the firmware file.**
+
 ---------------------------------------
 
 The firmware is based on the original global firmware version 21.290.23.00.00. It could be installed on any previous firmware (unless you have locked bootloader, but there's workaround), or updated from a modified firmware.
